@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #2563eb
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.container{
+    max-width:900px;
+}
+
+.card{
+    border:none !important;
+    border-radius:25px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.25);
+    overflow:hidden;
+}
+
+.card-body{
+    padding:40px;
+}
+
+h1{
+    font-weight:700;
+    color:white;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#dbeafe;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.form-label{
+    color:white;
+    font-weight:500;
+}
+
+.form-control,
+.form-select{
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    background:rgba(255,255,255,0.15);
+    color:white;
+}
+
+.form-control:focus,
+.form-select:focus{
+    background:rgba(255,255,255,0.2);
+    color:white;
+    box-shadow:0 0 0 4px rgba(59,130,246,0.3);
+}
+
+.form-control::placeholder{
+    color:#cbd5e1;
+}
+
+.btn-primary{
+    background:linear-gradient(
+        135deg,
+        #3b82f6,
+        #2563eb
+    );
+    border:none;
+    border-radius:12px;
+    padding:14px;
+    font-weight:600;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(59,130,246,0.5);
+}
+
+hr{
+    border-color:rgba(255,255,255,0.2);
+}
+
+.result-card{
+    margin-top:25px;
+    background:rgba(255,255,255,0.15);
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    color:white;
+}
+
+.result-card h2{
+    font-weight:700;
+}
+
+.result-card h3{
+    color:#22c55e;
+    font-weight:700;
+}
+
+.result-card h4{
+    color:#facc15;
+    margin-top:10px;
+}
+
+.list-group{
+    margin-top:15px;
+}
+
+.list-group-item{
+    background:rgba(255,255,255,0.1);
+    color:white;
+    border:none;
+    margin-bottom:10px;
+    border-radius:10px !important;
+}
+
+.logo{
+    font-size:50px;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.footer-text{
+    text-align:center;
+    color:#cbd5e1;
+    margin-top:20px;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+    .card-body{
+        padding:25px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+}
